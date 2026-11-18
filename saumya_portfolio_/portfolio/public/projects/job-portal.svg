@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Three browser windows: a landing page with an Apply button, an application form with a validated email field and POST submit, and a Submitted confirmation, under a 1-2-3 progress stepper">
+  <title>Job Application Portal</title>
+  <style>
+    .prog{animation:prog 6s ease-in-out -4.8s infinite;transform-box:fill-box;transform-origin:0 50%}
+    @keyframes prog{0%,12%{transform:scaleX(0)}32%,50%{transform:scaleX(.5)}70%,92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+    .s2{animation:s2 6s ease-in-out -4.8s infinite}
+    @keyframes s2{0%,30%{opacity:0}33%,95%{opacity:1}100%{opacity:0}}
+    .s3{animation:s3 6s ease-in-out -4.8s infinite}
+    @keyframes s3{0%,68%{opacity:0}71%,95%{opacity:1}100%{opacity:0}}
+    .click{animation:click 2s ease-in-out infinite;transform-box:fill-box;transform-origin:0 0}
+    @keyframes click{0%,100%{transform:translate(6px,8px)}40%{transform:translate(0,0)}50%{transform:translate(0,0) scale(.85)}60%{transform:translate(0,0)}}
+    .press{animation:press 2s ease-in-out infinite}
+    @keyframes press{0%,44%,58%,100%{transform:translate(0,0)}50%{transform:translate(3px,3px)}}
+    .tick{animation:tick 3s ease-in-out -1.5s infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes tick{0%,15%{transform:scale(0)}25%{transform:scale(1.2)}30%,100%{transform:scale(1)}}
+    .big{stroke-dasharray:110;animation:big 3s ease-in-out -1.5s infinite}
+    @keyframes big{0%,10%{stroke-dashoffset:110}35%,100%{stroke-dashoffset:0}}
+    .conf{animation:conf 3s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .conf.c2{animation-delay:-1s}.conf.c3{animation-delay:-2s}
+    @keyframes conf{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(25deg)}}
+    .spin{animation:spin 8s linear infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .bob{animation:bob 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes bob{0%,100%{transform:translateY(-4px) rotate(-8deg)}50%{transform:translateY(4px) rotate(8deg)}}
+    @media (prefers-reduced-motion: reduce){*{animation:none !important}.s2,.s3{opacity:1}}
+  </style>
+
+  <rect width="800" height="600" fill="#8193E8"/>
+
+  <!-- stepper -->
+  <rect x="160" y="85" width="480" height="14" rx="7" fill="#F4F1E6" stroke="#141414" stroke-width="3"/>
+  <rect class="prog" x="160" y="86" width="480" height="12" rx="6" fill="#D5E64B"/>
+  <g stroke="#141414" stroke-width="4">
+    <circle cx="166" cy="98" r="22" fill="#141414"/><circle cx="406" cy="98" r="22" fill="#141414"/><circle cx="646" cy="98" r="22" fill="#141414"/>
+    <circle cx="160" cy="92" r="22" fill="#D5E64B"/>
+    <circle cx="400" cy="92" r="22" fill="#F4F1E6"/><circle class="s2" cx="400" cy="92" r="22" fill="#D5E64B"/>
+    <circle cx="640" cy="92" r="22" fill="#F4F1E6"/><circle class="s3" cx="640" cy="92" r="22" fill="#D5E64B"/>
+  </g>
+  <g font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="18" fill="#141414" text-anchor="middle">
+    <text x="160" y="99">1</text><text x="400" y="99">2</text><text x="640" y="99">3</text>
+  </g>
+  <g font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="14" fill="#141414" text-anchor="middle">
+    <text x="160" y="140">Landing</text><text x="400" y="140">Apply</text><text x="640" y="140">Submitted</text>
+  </g>
+
+  <!-- card 1: landing -->
+  <g transform="rotate(-2 160 313)">
+    <rect x="68" y="176" width="200" height="290" rx="16" fill="#141414"/>
+    <rect x="60" y="168" width="200" height="290" rx="16" fill="#FFFFFF" stroke="#141414" stroke-width="4"/>
+    <path d="M62 202V184A14 14 0 0 1 76 170H244A14 14 0 0 1 258 184V202Z" fill="#141414"/>
+    <circle cx="76" cy="186" r="4.5" fill="#A68BF7"/><circle cx="90" cy="186" r="4.5" fill="#D5E64B"/><circle cx="104" cy="186" r="4.5" fill="#F4F1E6"/>
+    <rect x="118" y="178" width="128" height="16" rx="8" fill="#FFFFFF" opacity=".2"/>
+    <rect x="76" y="218" width="168" height="100" rx="10" fill="#A68BF7" stroke="#141414" stroke-width="3"/>
+    <circle cx="218" cy="242" r="13" fill="#D5E64B" stroke="#141414" stroke-width="3"/>
+    <text x="90" y="264" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="24" fill="#141414">Now</text>
+    <text x="90" y="300" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="24" fill="#141414">hiring!</text>
+    <rect x="76" y="334" width="150" height="10" rx="5" fill="#E4DCFD"/>
+    <rect x="76" y="352" width="112" height="10" rx="5" fill="#E4DCFD"/>
+    <g class="press">
+      <rect x="80" y="384" width="112" height="42" rx="21" fill="#141414"/>
+      <rect x="76" y="380" width="112" height="42" rx="21" fill="#D5E64B" stroke="#141414" stroke-width="4"/>
+      <text x="132" y="407" text-anchor="middle" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="18" fill="#141414">Apply</text>
+    </g>
+    <g transform="translate(172 406)"><g class="click">
+      <path d="M0 0L0 30L8 23L14 36L21 33L15 20L25 20Z" fill="#FFFFFF" stroke="#141414" stroke-width="3" stroke-linejoin="round"/>
+    </g></g>
+  </g>
+
+  <!-- card 2: apply form -->
+  <g>
+    <rect x="308" y="190" width="200" height="290" rx="16" fill="#141414"/>
+    <rect x="300" y="182" width="200" height="290" rx="16" fill="#FFFFFF" stroke="#141414" stroke-width="4"/>
+    <path d="M302 216V198A14 14 0 0 1 316 184H484A14 14 0 0 1 498 198V216Z" fill="#141414"/>
+    <circle cx="316" cy="200" r="4.5" fill="#A68BF7"/><circle cx="330" cy="200" r="4.5" fill="#D5E64B"/><circle cx="344" cy="200" r="4.5" fill="#F4F1E6"/>
+    <rect x="358" y="192" width="128" height="16" rx="8" fill="#FFFFFF" opacity=".2"/>
+    <text x="316" y="248" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="20" fill="#141414">Apply</text>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#6B6680">
+      <text x="318" y="268">name</text>
+      <text x="318" y="324">email</text>
+      <text x="318" y="380">cover letter</text>
+    </g>
+    <g fill="#F4F1E6" stroke="#141414" stroke-width="3">
+      <rect x="316" y="274" width="168" height="32" rx="8"/>
+      <rect x="316" y="330" width="168" height="32" rx="8" stroke="#6A4BE0"/>
+      <rect x="316" y="386" width="168" height="36" rx="8"/>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#141414">
+      <text x="328" y="295">Alex Kim</text>
+      <text x="328" y="351">alex@mail.com</text>
+    </g>
+    <path d="M328 398H450M328 410H410" stroke="#C9B8FB" stroke-width="4" stroke-linecap="round"/>
+    <g transform="translate(466 346)"><g class="tick">
+      <circle r="10" fill="#D5E64B" stroke="#141414" stroke-width="2.5"/>
+      <path d="M-5 0L-1.5 3.5L5 -3.5" fill="none" stroke="#141414" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g></g>
+    <rect x="316" y="432" width="104" height="30" rx="15" fill="#141414"/>
+    <text x="368" y="452" text-anchor="middle" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="14" fill="#F4F1E6">Submit</text>
+    <rect x="428" y="434" width="56" height="26" rx="8" fill="#C9B8FB" stroke="#141414" stroke-width="2.5"/>
+    <text x="456" y="452" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#141414">POST</text>
+  </g>
+
+  <!-- card 3: submitted -->
+  <g transform="rotate(2 640 313)">
+    <rect x="548" y="176" width="200" height="290" rx="16" fill="#141414"/>
+    <rect x="540" y="168" width="200" height="290" rx="16" fill="#FFFFFF" stroke="#141414" stroke-width="4"/>
+    <path d="M542 202V184A14 14 0 0 1 556 170H724A14 14 0 0 1 738 184V202Z" fill="#141414"/>
+    <circle cx="556" cy="186" r="4.5" fill="#A68BF7"/><circle cx="570" cy="186" r="4.5" fill="#D5E64B"/><circle cx="584" cy="186" r="4.5" fill="#F4F1E6"/>
+    <rect x="598" y="178" width="128" height="16" rx="8" fill="#FFFFFF" opacity=".2"/>
+    <circle cx="646" cy="304" r="52" fill="#141414"/>
+    <circle cx="640" cy="298" r="52" fill="#D5E64B" stroke="#141414" stroke-width="4"/>
+    <path class="big" d="M616 298L633 316L666 280" fill="none" stroke="#141414" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="640" y="396" text-anchor="middle" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="20" fill="#141414">Submitted</text>
+    <text x="640" y="422" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#6B6680">we'll be in touch</text>
+    <rect class="conf" x="566" y="234" width="10" height="10" rx="2" fill="#A68BF7" stroke="#141414" stroke-width="2"/>
+    <circle class="conf c2" cx="710" cy="248" r="6" fill="#A68BF7" stroke="#141414" stroke-width="2"/>
+    <rect class="conf c3" x="704" y="336" width="9" height="16" rx="2" fill="#D5E64B" stroke="#141414" stroke-width="2"/>
+    <circle class="conf" cx="570" cy="346" r="5" fill="#D5E64B" stroke="#141414" stroke-width="2"/>
+  </g>
+
+  <!-- connectors -->
+  <g>
+    <circle cx="280" cy="316" r="17" fill="#D5E64B" stroke="#141414" stroke-width="4"/>
+    <path d="M273 316H287M281 309L288 316L281 323" fill="none" stroke="#141414" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="520" cy="316" r="17" fill="#D5E64B" stroke="#141414" stroke-width="4"/>
+    <path d="M513 316H527M521 309L528 316L521 323" fill="none" stroke="#141414" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- decorations -->
+  <g transform="translate(96 520)"><g class="spin">
+    <ellipse rx="9" ry="27" fill="#A68BF7"/><ellipse rx="9" ry="27" fill="#A68BF7" transform="rotate(60)"/><ellipse rx="9" ry="27" fill="#A68BF7" transform="rotate(120)"/>
+  </g></g>
+  <g transform="translate(706 522)"><g class="bob">
+    <g fill="#D5E64B" stroke="#141414" stroke-width="3">
+      <circle cx="0" cy="-13" r="10"/><circle cx="12.4" cy="-4" r="10"/><circle cx="7.6" cy="10.5" r="10"/><circle cx="-7.6" cy="10.5" r="10"/><circle cx="-12.4" cy="-4" r="10"/>
+    </g>
+    <circle r="7" fill="#141414"/>
+  </g></g>
+  <g transform="translate(74 70)"><g class="spin">
+    <ellipse rx="5" ry="15" fill="#F4F1E6"/><ellipse rx="5" ry="15" fill="#F4F1E6" transform="rotate(60)"/><ellipse rx="5" ry="15" fill="#F4F1E6" transform="rotate(120)"/>
+  </g></g>
+</svg>

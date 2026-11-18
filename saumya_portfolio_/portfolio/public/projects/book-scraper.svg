@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="A friendly spider crawler walking over a bookshelf, a price tag reading 51.77 pounds, a book_prices.jsonl output card and pagination 1 2 3 next">
+  <title>Book Price Scraper</title>
+  <style>
+    .walk{animation:walk 8s ease-in-out infinite alternate}
+    @keyframes walk{0%{transform:translateX(0)}100%{transform:translateX(220px)}}
+    .hop{animation:hop .5s ease-in-out infinite alternate}
+    @keyframes hop{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+    .legs{animation:legs .5s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center bottom}
+    @keyframes legs{from{transform:skewX(-8deg)}to{transform:skewX(8deg)}}
+    .look{animation:look 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes look{0%,40%{transform:translateX(-2px)}50%,90%{transform:translateX(2px)}100%{transform:translateX(-2px)}}
+    .tag{animation:swing 3s ease-in-out infinite;transform-origin:452px 200px}
+    @keyframes swing{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(2deg)}}
+    .ln{animation:ln1 6s ease-in-out infinite}
+    .ln.l2{animation-name:ln2}.ln.l3{animation-name:ln3}
+    @keyframes ln1{0%,70%{opacity:1;transform:translateX(0)}76%,80%{opacity:0;transform:translateX(-8px)}86%,100%{opacity:1;transform:translateX(0)}}
+    @keyframes ln2{0%,70%{opacity:1;transform:translateX(0)}76%,86%{opacity:0;transform:translateX(-8px)}92%,100%{opacity:1;transform:translateX(0)}}
+    @keyframes ln3{0%,70%{opacity:1;transform:translateX(0)}76%,92%{opacity:0;transform:translateX(-8px)}98%,100%{opacity:1;transform:translateX(0)}}
+    .pg{opacity:0;animation:pg 4.5s steps(1) infinite}
+    .pg.p2{animation-delay:1.5s}.pg.p3{animation-delay:3s}
+    @keyframes pg{0%{opacity:1}33.33%,100%{opacity:0}}
+    .nx{animation:nx 1.5s ease-in-out infinite}
+    @keyframes nx{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+    .spin{animation:spin 8s linear infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .bob{animation:bob 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes bob{0%,100%{transform:translateY(-4px) rotate(-8deg)}50%{transform:translateY(4px) rotate(8deg)}}
+    @media (prefers-reduced-motion: reduce){*{animation:none !important}.pg.p1{opacity:1}}
+  </style>
+
+  <rect width="800" height="600" fill="#E9B98B"/>
+
+  <!-- BOOKSHELF -->
+  <rect x="78" y="148" width="400" height="290" rx="16" fill="#141414"/>
+  <rect x="70" y="140" width="400" height="290" rx="16" fill="#F4F1E6" stroke="#141414" stroke-width="4"/>
+  <rect x="88" y="158" width="364" height="256" rx="6" fill="#EBDDC2" stroke="#141414" stroke-width="3"/>
+  <g>
+    <rect x="96" y="182" width="32" height="100" rx="4" fill="#D5E64B" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M98 196H126M98 268H126" stroke="#141414" stroke-width="3"/><rect x="108" y="208" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="128" y="194" width="26" height="88" rx="4" fill="#A68BF7" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M130 208H152M130 268H152" stroke="#141414" stroke-width="3"/><rect x="137" y="220" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="154" y="170" width="38" height="112" rx="4" fill="#FFFFFF" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M156 184H190M156 268H190" stroke="#141414" stroke-width="3"/><rect x="169" y="196" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="192" y="186" width="26" height="96" rx="4" fill="#141414" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M194 200H216M194 268H216" stroke="#D5E64B" stroke-width="3"/><rect x="201" y="212" width="8" height="28" rx="4" fill="#D5E64B" opacity=".85"/>
+    <rect x="218" y="176" width="34" height="106" rx="4" fill="#C9B8FB" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M220 190H250M220 268H250" stroke="#141414" stroke-width="3"/><rect x="231" y="202" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="252" y="198" width="28" height="84" rx="4" fill="#D99A63" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M254 212H278M254 268H278" stroke="#141414" stroke-width="3"/><rect x="262" y="224" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="280" y="168" width="40" height="114" rx="4" fill="#D5E64B" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M282 182H318M282 268H318" stroke="#141414" stroke-width="3"/><rect x="296" y="194" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="320" y="184" width="26" height="98" rx="4" fill="#FFFFFF" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M322 198H344M322 268H344" stroke="#141414" stroke-width="3"/><rect x="329" y="210" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="346" y="192" width="34" height="90" rx="4" fill="#A68BF7" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M348 206H378M348 268H378" stroke="#141414" stroke-width="3"/><rect x="359" y="218" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <g transform="rotate(-14 424 282)"><rect x="390" y="178" width="30" height="104" rx="4" fill="#D99A63" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M392 192H418M392 268H418" stroke="#141414" stroke-width="3"/><rect x="401" y="204" width="8" height="28" rx="4" fill="#141414" opacity=".85"/></g>
+  </g>
+  <rect x="80" y="280" width="380" height="16" rx="5" fill="#F4F1E6" stroke="#141414" stroke-width="4"/>
+  <g>
+    <rect x="96" y="318" width="36" height="96" rx="4" fill="#FFFFFF" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M98 332H130M98 400H130" stroke="#141414" stroke-width="3"/><rect x="110" y="344" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="132" y="310" width="30" height="104" rx="4" fill="#D5E64B" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M134 324H160M134 400H160" stroke="#141414" stroke-width="3"/><rect x="143" y="336" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="162" y="326" width="28" height="88" rx="4" fill="#D99A63" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M164 340H188M164 400H188" stroke="#141414" stroke-width="3"/><rect x="172" y="352" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="190" y="306" width="38" height="108" rx="4" fill="#A68BF7" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M192 320H226M192 400H226" stroke="#141414" stroke-width="3"/><rect x="205" y="332" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="228" y="322" width="26" height="92" rx="4" fill="#F4F1E6" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M230 336H252M230 400H252" stroke="#141414" stroke-width="3"/><rect x="237" y="348" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="254" y="314" width="32" height="100" rx="4" fill="#141414" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M256 328H284M256 400H284" stroke="#D5E64B" stroke-width="3"/><rect x="266" y="340" width="8" height="28" rx="4" fill="#D5E64B" opacity=".85"/>
+    <rect x="286" y="328" width="30" height="86" rx="4" fill="#C9B8FB" stroke="#141414" stroke-width="4" stroke-linejoin="round"/><path d="M288 342H314M288 400H314" stroke="#141414" stroke-width="3"/><rect x="297" y="354" width="8" height="28" rx="4" fill="#141414" opacity=".85"/>
+    <rect x="334" y="392" width="112" height="22" rx="4" fill="#FFFFFF" stroke="#141414" stroke-width="4"/>
+    <rect x="342" y="370" width="98" height="22" rx="4" fill="#A68BF7" stroke="#141414" stroke-width="4"/>
+    <rect x="338" y="348" width="106" height="22" rx="4" fill="#D5E64B" stroke="#141414" stroke-width="4"/>
+    <path d="M352 392V414M432 392V414M356 370V392M426 370V392M352 348V370M430 348V370" stroke="#141414" stroke-width="3"/>
+  </g>
+
+  <!-- price tag on the tall lime book -->
+  <path d="M302 172C330 150 400 170 440 196" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+  <g class="tag">
+    <path d="M452 200L476 176H612A12 12 0 0 1 624 188V228A12 12 0 0 1 612 240H476Z" fill="#141414" transform="translate(7 7)" stroke="#141414" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M452 200L476 176H612A12 12 0 0 1 624 188V228A12 12 0 0 1 612 240H476Z" fill="#D5E64B" stroke="#141414" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="474" cy="208" r="6" fill="#F4F1E6" stroke="#141414" stroke-width="3"/>
+    <text x="551" y="220" text-anchor="middle" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="24" fill="#141414">£51.77</text>
+  </g>
+
+  <!-- spider crawler -->
+  <g transform="translate(140 140) scale(1.25)">
+    <g class="walk">
+      <g class="hop">
+        <g class="legs" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M-12 -18L-28 -32L-42 -1M-14 -12L-26 -22L-32 -1M-10 -8L-18 -16L-21 -1"/>
+          <path d="M12 -18L28 -32L42 -1M14 -12L26 -22L32 -1M10 -8L18 -16L21 -1"/>
+        </g>
+        <path d="M0 -42V-56" stroke="#141414" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="0" cy="-60" r="6" fill="#D5E64B" stroke="#141414" stroke-width="3"/>
+        <ellipse cx="0" cy="-22" rx="24" ry="20" fill="#A68BF7" stroke="#141414" stroke-width="4"/>
+        <circle cx="-9" cy="-26" r="7" fill="#FFFFFF" stroke="#141414" stroke-width="2.5"/>
+        <circle cx="9" cy="-26" r="7" fill="#FFFFFF" stroke="#141414" stroke-width="2.5"/>
+        <g class="look"><circle cx="-8" cy="-26" r="3.2" fill="#141414"/><circle cx="10" cy="-26" r="3.2" fill="#141414"/></g>
+        <path d="M-5 -14Q0 -10 5 -14" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- JSONL output card -->
+  <rect x="510" y="290" width="246" height="150" rx="18" fill="#141414"/>
+  <rect x="502" y="282" width="246" height="150" rx="18" fill="#FFFFFF" stroke="#141414" stroke-width="4"/>
+  <path d="M504 322V300A16 16 0 0 1 520 284H730A16 16 0 0 1 746 300V322Z" fill="#141414"/>
+  <text x="522" y="309" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#F4F1E6">book_prices.jsonl</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" fill="#141414">
+    <text class="ln" x="518" y="352">{"A Light in...": "£51.77"}</text>
+    <text class="ln l2" x="518" y="378">{"Soumission": "£50.10"}</text>
+    <text class="ln l3" x="518" y="404">{"Sapiens": "£54.23"}</text>
+  </g>
+
+  <!-- pagination -->
+  <g font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="18" text-anchor="middle">
+    <g fill="#141414"><circle cx="276" cy="508" r="21"/><circle cx="332" cy="508" r="21"/><circle cx="388" cy="508" r="21"/></g>
+    <g fill="#F4F1E6" stroke="#141414" stroke-width="4"><circle cx="270" cy="502" r="21"/><circle cx="326" cy="502" r="21"/><circle cx="382" cy="502" r="21"/></g>
+    <g fill="#D5E64B" stroke="#141414" stroke-width="4"><circle class="pg p1" cx="270" cy="502" r="21"/><circle class="pg p2" cx="326" cy="502" r="21"/><circle class="pg p3" cx="382" cy="502" r="21"/></g>
+    <g fill="#141414"><text x="270" y="509">1</text><text x="326" y="509">2</text><text x="382" y="509">3</text></g>
+    <g class="nx">
+      <path d="M418 502H446M436 491L448 502L436 513" fill="none" stroke="#141414" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <rect x="466" y="487" width="104" height="42" rx="21" fill="#141414"/>
+    <rect x="460" y="481" width="104" height="42" rx="21" fill="#A68BF7" stroke="#141414" stroke-width="4"/>
+    <text x="512" y="509" fill="#141414">next</text>
+  </g>
+
+  <!-- decorations -->
+  <g transform="translate(700 110)"><g class="spin">
+    <ellipse rx="9" ry="27" fill="#A68BF7"/><ellipse rx="9" ry="27" fill="#A68BF7" transform="rotate(60)"/><ellipse rx="9" ry="27" fill="#A68BF7" transform="rotate(120)"/>
+  </g></g>
+  <g transform="translate(690 505)"><g class="bob">
+    <g fill="#D5E64B" stroke="#141414" stroke-width="3">
+      <circle cx="0" cy="-13" r="10"/><circle cx="12.4" cy="-4" r="10"/><circle cx="7.6" cy="10.5" r="10"/><circle cx="-7.6" cy="10.5" r="10"/><circle cx="-12.4" cy="-4" r="10"/>
+    </g>
+    <circle r="7" fill="#141414"/>
+  </g></g>
+  <g transform="translate(120 505)"><g class="spin">
+    <ellipse rx="6" ry="18" fill="#F4F1E6"/><ellipse rx="6" ry="18" fill="#F4F1E6" transform="rotate(60)"/><ellipse rx="6" ry="18" fill="#F4F1E6" transform="rotate(120)"/>
+  </g></g>
+</svg>

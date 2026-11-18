@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Terminal running python todo.py with a menu and a y/n completion prompt, a checklist note, and an arrow to my_list.json">
+  <title>CLI To-Do</title>
+  <style>
+    .caret{animation:blink 1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+    .chk{stroke-dasharray:34;animation:chk 5s ease-in-out infinite}
+    @keyframes chk{0%,62%{stroke-dashoffset:0;opacity:1}68%{stroke-dashoffset:0;opacity:0}70%,80%{stroke-dashoffset:34;opacity:0}81%{stroke-dashoffset:34;opacity:1}92%,100%{stroke-dashoffset:0;opacity:1}}
+    .box{animation:box 5s ease-in-out infinite}
+    @keyframes box{0%,66%{fill:#D5E64B}70%,84%{fill:#FFFFFF}90%,100%{fill:#D5E64B}}
+    .vy{animation:vy 5s ease-in-out infinite}
+    @keyframes vy{0%,66%{opacity:1}70%,86%{opacity:0}90%,100%{opacity:1}}
+    .vn{animation:vn 5s ease-in-out infinite;opacity:0}
+    @keyframes vn{0%,66%{opacity:0}70%,86%{opacity:1}90%,100%{opacity:0}}
+    .file{animation:file 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes file{0%,100%{transform:translateY(-5px) rotate(2deg)}50%{transform:translateY(5px) rotate(0deg)}}
+    .arw{animation:arw 1.2s linear infinite}
+    @keyframes arw{to{stroke-dashoffset:-24}}
+    .spin{animation:spin 8s linear infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .bob{animation:bob 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes bob{0%,100%{transform:translateY(-4px) rotate(-8deg)}50%{transform:translateY(4px) rotate(8deg)}}
+    @media (prefers-reduced-motion: reduce){*{animation:none !important}}
+  </style>
+
+  <rect width="800" height="600" fill="#BDB07C"/>
+  <circle cx="640" cy="300" r="170" fill="#FFFFFF" opacity=".14"/>
+
+  <!-- terminal -->
+  <rect x="58" y="70" width="400" height="256" rx="20" fill="#141414"/>
+  <rect x="50" y="62" width="400" height="256" rx="20" fill="#2A2A2A" stroke="#141414" stroke-width="4"/>
+  <path d="M52 102V80A16 16 0 0 1 68 64H432A16 16 0 0 1 448 80V102Z" fill="#F4F1E6"/>
+  <path d="M52 102H448" stroke="#141414" stroke-width="4"/>
+  <circle cx="76" cy="83" r="7" fill="#A68BF7" stroke="#141414" stroke-width="2.5"/>
+  <circle cx="98" cy="83" r="7" fill="#D5E64B" stroke="#141414" stroke-width="2.5"/>
+  <circle cx="120" cy="83" r="7" fill="#FFFFFF" stroke="#141414" stroke-width="2.5"/>
+  <text x="250" y="89" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#141414">todo.py</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#F4F1E6">
+    <text x="72" y="136"><tspan fill="#D5E64B">$</tspan> python todo.py</text>
+    <text x="72" y="164"><tspan fill="#C9B8FB">1.</tspan> Make a new list</text>
+    <text x="72" y="188"><tspan fill="#C9B8FB">2.</tspan> Edit or view a previous list</text>
+    <text x="72" y="220"><tspan fill="#D5E64B">&gt;&gt;</tspan> 1</text>
+    <text x="72" y="248"><tspan fill="#D5E64B">&gt;&gt;</tspan> Ship portfolio</text>
+    <text x="72" y="282">Completed or not(y/n): <tspan fill="#D5E64B">y</tspan></text>
+  </g>
+  <rect class="caret" x="309" y="267" width="10" height="19" fill="#F4F1E6"/>
+
+  <!-- checklist note -->
+  <g transform="rotate(-2 250 448)">
+    <rect x="98" y="364" width="300" height="176" rx="16" fill="#141414"/>
+    <rect x="90" y="356" width="300" height="176" rx="16" fill="#F4F1E6" stroke="#141414" stroke-width="4"/>
+    <rect x="200" y="344" width="80" height="24" rx="4" fill="#D5E64B" opacity=".9" stroke="#141414" stroke-width="3" transform="rotate(-4 240 356)"/>
+    <text x="112" y="398" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="20" fill="#141414">my_list</text>
+    <g fill="#D5E64B" stroke="#141414" stroke-width="3.5" stroke-linejoin="round">
+      <rect x="112" y="416" width="26" height="26" rx="6"/>
+      <rect x="112" y="452" width="26" height="26" rx="6"/>
+      <rect class="box" x="112" y="488" width="26" height="26" rx="6"/>
+    </g>
+    <g fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M118 429L124 435L134 422"/>
+      <path d="M118 465L124 471L134 458"/>
+      <path class="chk" d="M118 501L124 507L134 494"/>
+    </g>
+    <g font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="16" fill="#141414">
+      <text x="152" y="435">Learn git</text>
+      <text x="152" y="471">ISS tracker</text>
+      <text x="152" y="507">Ship portfolio</text>
+    </g>
+  </g>
+
+  <!-- arrow to file -->
+  <path class="arw" d="M410 452C462 452 484 414 500 388" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 12"/>
+  <path d="M486 386L504 380L503 398" fill="none" stroke="#141414" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- my_list.json file -->
+  <g class="file">
+    <path d="M538 168H690L738 216V412A14 14 0 0 1 724 426H538A14 14 0 0 1 524 412V182A14 14 0 0 1 538 168Z" fill="#141414" transform="translate(8 8)"/>
+    <path d="M538 168H690L738 216V412A14 14 0 0 1 724 426H538A14 14 0 0 1 524 412V182A14 14 0 0 1 538 168Z" fill="#FFFFFF" stroke="#141414" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M690 168V204A12 12 0 0 0 702 216H738" fill="#D5E64B" stroke="#141414" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="542" y="186" width="128" height="30" rx="8" fill="#A68BF7" stroke="#141414" stroke-width="3"/>
+    <text x="606" y="207" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#141414">my_list.json</text>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" fill="#141414">
+      <text x="542" y="256">{</text>
+      <text x="552" y="286"><tspan fill="#6A4BE0">"Learn git"</tspan>: "y",</text>
+      <text x="552" y="316"><tspan fill="#6A4BE0">"ISS tracker"</tspan>: "y",</text>
+      <text x="552" y="346"><tspan fill="#6A4BE0">"Ship portfolio"</tspan>:</text>
+      <rect x="572" y="358" width="34" height="24" rx="6" fill="#D5E64B"/>
+      <text class="vy" x="576" y="375">"y"</text>
+      <text class="vn" x="576" y="375">"n"</text>
+      <text x="542" y="404">}</text>
+    </g>
+  </g>
+
+  <!-- decorations -->
+  <g transform="translate(712 92)"><g class="spin">
+    <ellipse rx="9" ry="27" fill="#A68BF7"/><ellipse rx="9" ry="27" fill="#A68BF7" transform="rotate(60)"/><ellipse rx="9" ry="27" fill="#A68BF7" transform="rotate(120)"/>
+  </g></g>
+  <g transform="translate(694 504)"><g class="bob">
+    <g fill="#D5E64B" stroke="#141414" stroke-width="3">
+      <circle cx="0" cy="-13" r="10"/><circle cx="12.4" cy="-4" r="10"/><circle cx="7.6" cy="10.5" r="10"/><circle cx="-7.6" cy="10.5" r="10"/><circle cx="-12.4" cy="-4" r="10"/>
+    </g>
+    <circle r="7" fill="#141414"/>
+  </g></g>
+  <g transform="translate(540 110)"><g class="spin">
+    <ellipse rx="5" ry="15" fill="#F4F1E6"/><ellipse rx="5" ry="15" fill="#F4F1E6" transform="rotate(60)"/><ellipse rx="5" ry="15" fill="#F4F1E6" transform="rotate(120)"/>
+  </g></g>
+</svg>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="UML class diagram: abstract Shape with area(), inherited by Circle and Square, plus a BankAccount class with private balance and deposit(), with encapsulation and inheritance stickers">
+  <title>OOP Lab</title>
+  <style>
+    .f1{animation:f1 4s ease-in-out infinite}
+    .f2{animation:f1 4s ease-in-out infinite;animation-delay:-2s}
+    @keyframes f1{0%,100%{transform:translateY(-4px)}50%{transform:translateY(4px)}}
+    .flow{animation:flow 1.4s linear infinite}
+    @keyframes flow{to{stroke-dashoffset:-22}}
+    .tilt{animation:tilt 3.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    .tilt2{animation:tilt 3.5s ease-in-out infinite;animation-delay:-1.75s;transform-box:fill-box;transform-origin:center}
+    @keyframes tilt{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+    .lock{animation:lock 3s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+    @keyframes lock{0%,70%,100%{transform:rotate(0)}76%{transform:rotate(-12deg)}84%{transform:rotate(10deg)}90%{transform:rotate(0)}}
+    .spin{animation:spin 8s linear infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .bob{animation:bob 4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+    @keyframes bob{0%,100%{transform:translateY(-4px) rotate(-8deg)}50%{transform:translateY(4px) rotate(8deg)}}
+    @media (prefers-reduced-motion: reduce){*{animation:none !important}}
+  </style>
+
+  <rect width="800" height="600" fill="#A9C47F"/>
+  <g stroke="#FFFFFF" stroke-opacity=".18" stroke-width="2">
+    <path d="M0 100H800M0 200H800M0 300H800M0 400H800M0 500H800M100 0V600M200 0V600M300 0V600M400 0V600M500 0V600M600 0V600M700 0V600"/>
+  </g>
+
+  <g transform="translate(0 36)">
+  <!-- inheritance tree -->
+  <path class="flow" d="M260 192V240M170 240H400M170 240V292M400 240V292" fill="none" stroke="#141414" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12 10"/>
+  <path d="M260 164L280 194H240Z" fill="#FFFFFF" stroke="#141414" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Shape (abstract) -->
+  <g>
+    <rect x="158" y="72" width="204" height="96" rx="14" fill="#141414"/>
+    <rect x="150" y="64" width="204" height="96" rx="14" fill="#FFFFFF" stroke="#141414" stroke-width="4"/>
+    <path d="M152 116V80A14 14 0 0 1 166 66H338A14 14 0 0 1 352 80V116Z" fill="#A68BF7"/>
+    <path d="M152 116H352" stroke="#141414" stroke-width="4"/>
+    <text x="252" y="84" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#141414">«abstract»</text>
+    <text x="252" y="107" text-anchor="middle" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="21" fill="#141414">Shape</text>
+    <text x="172" y="145" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" font-style="italic" fill="#141414">+ area()</text>
+  </g>
+
+  <!-- Circle -->
+  <g class="f1">
+    <rect x="86" y="300" width="184" height="128" rx="14" fill="#141414"/>
+    <rect x="78" y="292" width="184" height="128" rx="14" fill="#FFFFFF" stroke="#141414" stroke-width="4"/>
+    <path d="M80 336V306A12 12 0 0 1 92 294H248A12 12 0 0 1 260 306V336Z" fill="#D5E64B"/>
+    <path d="M80 336H260" stroke="#141414" stroke-width="4"/>
+    <circle cx="106" cy="315" r="10" fill="#FFFFFF" stroke="#141414" stroke-width="3"/>
+    <text x="126" y="323" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="20" fill="#141414">Circle</text>
+    <text x="98" y="368" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#141414">- radius</text>
+    <text x="98" y="400" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#141414">+ area()</text>
+  </g>
+
+  <!-- Square -->
+  <g class="f2">
+    <rect x="316" y="300" width="184" height="128" rx="14" fill="#141414"/>
+    <rect x="308" y="292" width="184" height="128" rx="14" fill="#FFFFFF" stroke="#141414" stroke-width="4"/>
+    <path d="M310 336V306A12 12 0 0 1 322 294H478A12 12 0 0 1 490 306V336Z" fill="#D5E64B"/>
+    <path d="M310 336H490" stroke="#141414" stroke-width="4"/>
+    <rect x="327" y="306" width="19" height="19" rx="3" fill="#FFFFFF" stroke="#141414" stroke-width="3"/>
+    <text x="356" y="323" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="20" fill="#141414">Square</text>
+    <text x="328" y="368" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#141414">- side</text>
+    <text x="328" y="400" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#141414">+ area()</text>
+  </g>
+
+  </g>
+
+  <!-- BankAccount -->
+  <g transform="translate(0 24)">
+    <rect x="556" y="104" width="196" height="172" rx="14" fill="#141414"/>
+    <rect x="548" y="96" width="196" height="172" rx="14" fill="#F4F1E6" stroke="#141414" stroke-width="4"/>
+    <path d="M550 142V110A12 12 0 0 1 562 98H730A12 12 0 0 1 742 110V142Z" fill="#141414"/>
+    <text x="646" y="128" text-anchor="middle" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="19" fill="#D5E64B">BankAccount</text>
+    <text x="566" y="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#141414">- balance</text>
+    <g class="lock">
+      <path d="M700 166V160A9 9 0 0 1 718 160V166" fill="none" stroke="#141414" stroke-width="3.5" stroke-linecap="round"/>
+      <rect x="695" y="165" width="28" height="20" rx="5" fill="#A68BF7" stroke="#141414" stroke-width="3"/>
+      <circle cx="709" cy="175" r="3" fill="#141414"/>
+    </g>
+    <path d="M550 196H742" stroke="#141414" stroke-width="3" stroke-dasharray="6 6"/>
+    <text x="566" y="226" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#141414">+ deposit()</text>
+    <text x="566" y="254" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#141414">+ withdraw()</text>
+  </g>
+
+  <!-- stickers -->
+  <g transform="translate(652 334) rotate(5)"><g class="tilt">
+    <rect x="-86" y="-20" width="172" height="40" rx="20" fill="#141414" transform="translate(5 5)"/>
+    <rect x="-86" y="-20" width="172" height="40" rx="20" fill="#A68BF7" stroke="#141414" stroke-width="4"/>
+    <text x="0" y="6" text-anchor="middle" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="15" fill="#141414">encapsulation</text>
+  </g></g>
+  <g transform="translate(430 238) rotate(-6)"><g class="tilt2">
+    <rect x="-78" y="-20" width="156" height="40" rx="20" fill="#141414" transform="translate(5 5)"/>
+    <rect x="-78" y="-20" width="156" height="40" rx="20" fill="#D5E64B" stroke="#141414" stroke-width="4"/>
+    <text x="0" y="6" text-anchor="middle" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-weight="900" font-size="15" fill="#141414">inheritance</text>
+  </g></g>
+
+  <!-- mini projects -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#141414">
+    <g transform="rotate(-3 251 515)">
+      <rect x="214" y="498" width="74" height="34" rx="10" fill="#FFFFFF" stroke="#141414" stroke-width="3"/>
+      <text x="228" y="520">Money</text>
+    </g>
+    <g transform="rotate(2 365 515)">
+      <rect x="302" y="498" width="126" height="34" rx="10" fill="#F4F1E6" stroke="#141414" stroke-width="3"/>
+      <text x="316" y="520">OrderSystem</text>
+    </g>
+    <g transform="rotate(-2 514 515)">
+      <rect x="442" y="498" width="144" height="34" rx="10" fill="#FFFFFF" stroke="#141414" stroke-width="3"/>
+      <text x="456" y="520">Users &amp; Roles</text>
+    </g>
+  </g>
+
+  <!-- decorations -->
+  <g transform="translate(84 100)"><g class="spin">
+    <ellipse rx="9" ry="27" fill="#A68BF7"/><ellipse rx="9" ry="27" fill="#A68BF7" transform="rotate(60)"/><ellipse rx="9" ry="27" fill="#A68BF7" transform="rotate(120)"/>
+  </g></g>
+  <g transform="translate(690 462)"><g class="bob">
+    <g fill="#D5E64B" stroke="#141414" stroke-width="3">
+      <circle cx="0" cy="-13" r="10"/><circle cx="12.4" cy="-4" r="10"/><circle cx="7.6" cy="10.5" r="10"/><circle cx="-7.6" cy="10.5" r="10"/><circle cx="-12.4" cy="-4" r="10"/>
+    </g>
+    <circle r="7" fill="#141414"/>
+  </g></g>
+  <g transform="translate(470 80)"><g class="spin">
+    <ellipse rx="5" ry="15" fill="#F4F1E6"/><ellipse rx="5" ry="15" fill="#F4F1E6" transform="rotate(60)"/><ellipse rx="5" ry="15" fill="#F4F1E6" transform="rotate(120)"/>
+  </g></g>
+</svg>
